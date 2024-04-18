@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analyze the dataset</title>
+</head>
+<body>
+	<h1>Analyze the dataset</h1>
+	<p>The uploaded dataset is:</p>
+	{{ data|safe }}
+	<form action="/analyze" method="get">
+		<input type="hidden" name="data" value="{{ data }}">
+		<input type="submit" value="Analyze">
+	</form>
+</body>
+</html>
